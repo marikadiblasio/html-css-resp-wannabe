@@ -127,3 +127,31 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+ /* Bonus (makes the media query for tablet unnecessary) */
+ @media screen and (max-width: 1140px) {
+    .container {
+     width: 100%;
+    }
+ }
+ /* Tablet responsiveness */
+ @media screen and (max-width: 768px) {
+   .container {
+    width: 100%;
+   }
+}
+/* smartphone responsiveness */
+@media screen and (max-width: 480px) {
+    .row {
+        flex-wrap: wrap;
+    }
+   .lessons .col, .card, .card > img, .steps .col, .why-us .col-left, .why-us .col-right{
+        width: 100%;
+    }
+    .why-us {
+        background-color: #222222;
+    }
+    .steps, .why-us {
+        margin-bottom: 0;
+        padding-bottom: 3rem;
+ }
+}
